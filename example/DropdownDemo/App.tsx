@@ -1,6 +1,5 @@
 import React, {useRef, useState} from 'react';
 import {
-  SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -10,6 +9,7 @@ import {
   Alert,
   LogBox,
 } from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 import {
   DropdownSelect,

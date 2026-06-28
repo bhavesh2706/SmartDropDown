@@ -4,6 +4,7 @@
 
 import 'react-native';
 import React from 'react';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 import App from '../App';
 
 // Note: import explicitly to use the types shipped with jest.
@@ -13,5 +14,9 @@ import {it} from '@jest/globals';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  renderer.create(<App />);
+  renderer.create(
+    <SafeAreaProvider>
+      <App />
+    </SafeAreaProvider>,
+  );
 });
