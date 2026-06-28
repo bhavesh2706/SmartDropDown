@@ -13,42 +13,52 @@ node_modules/
 # Environment & secrets
 .env
 .env.*
+.env.local
+.env*.local
 local.properties
 *.pem
 *.p12
 *.jks
 !example/DropdownDemo/android/app/debug.keystore
 
-# OS & IDE
+# OS
 .DS_Store
+**/.DS_Store
 Thumbs.db
+
+# IDE & editor
 .idea/
 .vscode/
 *.swp
+*.swo
+*.orig
 
-# Logs & test output
+# Logs, caches & test output
 *.log
 npm-debug.log*
 yarn-error.log*
+.eslintcache
 coverage/
 
 # React Native / Metro
 *.jsbundle
 .metro-health-check*
 .metro-tmp/
+.watchman-cookie-*
 
-# Example app native build artifacts
+# Example app — native build artifacts
 example/DropdownDemo/ios/Pods/
 example/DropdownDemo/ios/build/
+example/DropdownDemo/ios/DerivedData/
+example/DropdownDemo/ios/.xcode.env.local
+example/DropdownDemo/ios/vendor/bundle/
 example/DropdownDemo/android/build/
 example/DropdownDemo/android/.gradle/
-example/DropdownDemo/ios/.xcode.env.local
-
-# Local agent / internal docs (not published)
-.claude/
-CLAUDE.md
-PROJECT_STATE.md
-AGENTS.md
-*.pdf
+example/DropdownDemo/android/.kotlin/
+example/DropdownDemo/android/app/build/
+example/DropdownDemo/android/app/.cxx/
+example/DropdownDemo/android/app/release/
+example/DropdownDemo/**/*.apk
+example/DropdownDemo/**/*.aab
 
 # NOTE: docs/assets/*.gif are README previews (Android + iOS) — commit them (do not ignore docs/)
