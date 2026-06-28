@@ -44,4 +44,11 @@ example/DropdownDemo/android/build/
 example/DropdownDemo/android/.gradle/
 example/DropdownDemo/ios/.xcode.env.local
 
+# Local agent / internal docs (not published)
+.claude/
+CLAUDE.md
+PROJECT_STATE.md
+AGENTS.md
+*.pdf
+
 # NOTE: docs/assets/*.gif are README previews (Android + iOS) — commit them (do not ignore docs/)
